@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>This is the homepage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'Hello, ' + ${homeForm.name} + '!'"/>
+
+<br>
+<br>
+<br>
+<form method="post" action="#" th:action="@{/doSomethingOther}" th:object="${homeForm}">
+    <input type="text" th:field="*{text}"/>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
