@@ -31,7 +31,7 @@ public class HomeController {
         // and execute the use case.
         getSomeUseCase().doSomething(requestModel);
 
-        // Do not return anything, the rest will be handled by the Presenter
+        // Do not return anything, the rest will be handled by the use case
     }
 
     @PostMapping("/doSomethingOther")
